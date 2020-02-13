@@ -7,7 +7,6 @@ resource "azurerm_network_security_group" "ForgeRock-POTApplication" {
   tags {
     Resource-ID                    = "${var.Resource-ID}"
     Environment                    = "${var.Environment}"
-    CostCenter                     = "${var.CostCenter}"
     Service-Display-Name           = "${var.Service-Display-Name}"
     Cloud-Maturity-Level           = "${var.Cloud-Maturity-Level}"
     Provisioner                    = "${var.Provisioner}"
@@ -25,7 +24,6 @@ resource "azurerm_network_security_group" "ForgeRock-POTPresentation" {
   tags {
     Resource-ID                    = "${var.Resource-ID}"
     Environment                    = "${var.Environment}"
-    CostCenter                     = "${var.CostCenter}"
     Service-Display-Name           = "${var.Service-Display-Name}"
     Cloud-Maturity-Level           = "${var.Cloud-Maturity-Level}"
     Provisioner                    = "${var.Provisioner}"
@@ -41,7 +39,6 @@ resource "azurerm_network_security_group" "ForgeRock-POTDatabase" {
   tags {
     Resource-ID                    = "${var.Resource-ID}"
     Environment                    = "${var.Environment}"
-    CostCenter                     = "${var.CostCenter}"
     Service-Display-Name           = "${var.Service-Display-Name}"
     Cloud-Maturity-Level           = "${var.Cloud-Maturity-Level}"
     //Provisioner                    = "${var.Provisioner}"
@@ -65,7 +62,6 @@ resource "azurerm_virtual_network" "ForgeRock-POTVNET" {
   tags {
     Resource-ID                    = "${var.Resource-ID}"
     Environment                    = "${var.Environment}"
-    CostCenter                     = "${var.CostCenter}"
     Service-Display-Name           = "${var.Service-Display-Name}"
     Cloud-Maturity-Level           = "${var.Cloud-Maturity-Level}"
     Provisioner                    = "${var.Provisioner}"
@@ -149,7 +145,6 @@ resource "azurerm_route_table" "UDR-ForgeRock-POT" {
 tags = {
     Resource-ID                    = "${var.Resource-ID}"
     Environment                    = "${var.Environment}"
-    CostCenter                     = "${var.CostCenter}"
     Service-Display-Name           = "${var.Service-Display-Name}"
     Cloud-Maturity-Level           = "${var.Cloud-Maturity-Level}"
     Provisioner                    = "${var.Provisioner}"

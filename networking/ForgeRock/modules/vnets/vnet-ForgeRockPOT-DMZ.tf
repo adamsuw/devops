@@ -7,7 +7,6 @@ resource "azurerm_network_security_group" "ForgeRock-POTExternal-Collaboration" 
   tags {
     Resource-ID                    = "${var.Resource-ID}"
     Environment                    = "${var.Environment}"
-    CostCenter                     = "${var.CostCenter}"
     Service-Display-Name           = "${var.Service-Display-Name}"
     Cloud-Maturity-Level           = "${var.Cloud-Maturity-Level}"
     Provisioner                    = "${var.Provisioner}"
@@ -24,7 +23,6 @@ resource "azurerm_network_security_group" "ForgeRock-POTExternal-Presentation" {
   tags {
     Resource-ID                    = "${var.Resource-ID}"
     Environment                    = "${var.Environment}"
-    CostCenter                     = "${var.CostCenter}"
     Service-Display-Name           = "${var.Service-Display-Name}"
     Cloud-Maturity-Level           = "${var.Cloud-Maturity-Level}"
     Provisioner                    = "${var.Provisioner}"
@@ -49,7 +47,6 @@ resource "azurerm_virtual_network" "ForgeRock-POTDMZVNET" {
   tags {
     Resource-ID                    = "${var.Resource-ID}"
     Environment                    = "${var.Environment}"
-    CostCenter                     = "${var.CostCenter}"
     Service-Display-Name           = "${var.Service-Display-Name}"
     Cloud-Maturity-Level           = "${var.Cloud-Maturity-Level}"
     Provisioner                    = "${var.Provisioner}"
@@ -107,7 +104,6 @@ resource "azurerm_route_table" "UDR-ForgeRock-POT-DMZ" {
 tags = {
     Resource-ID                    = "${var.Resource-ID}"
     Environment                    = "${var.Environment}"
-    CostCenter                     = "${var.CostCenter}"
     Service-Display-Name           = "${var.Service-Display-Name}"
     Cloud-Maturity-Level           = "${var.Cloud-Maturity-Level}"
     Provisioner                    = "${var.Provisioner}"
